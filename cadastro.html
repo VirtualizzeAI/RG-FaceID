@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cadastro de Funcionário</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Cadastrar Novo Funcionário</h1>
+      <form id="cadastroForm">
+        <input type="text" id="nome" placeholder="Nome completo" required />
+        <input type="text" id="cargo" placeholder="Cargo" required />
+
+        <p>Posicione o rosto no centro do vídeo e capture a foto.</p>
+        <video id="video" width="320" height="240" autoplay muted></video>
+        <button type="button" id="capturarFoto">Capturar Foto</button>
+        <canvas id="canvas" style="display: none"></canvas>
+        <img
+          id="fotoPreview"
+          class="foto-preview"
+          alt="Sua foto aparecerá aqui"
+        />
+
+        <button type="submit" id="submitBtn">Salvar Cadastro</button>
+        <p id="status"></p>
+      </form>
+      <a href="index.html">Ir para a página de ponto</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.3/dist/umd/supabase.js"></script>
+
+    <script src="cadastro.js"></script>
+  </body>
+</html>

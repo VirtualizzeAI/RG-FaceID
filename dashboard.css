@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filtro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filtro input[type="date"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-cadastro {
+  padding: 8px 15px;
+  border: none;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.btn-cadastro:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.funcionario {
+  background-color: #fff;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.funcionario:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.funcionario h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.pontos {
+  display: none;
+  margin-top: 10px;
+}
+
+.pontos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.pontos th, .pontos td {
+  padding: 8px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.pontos th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pontos tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.pontos tr:hover {
+  background-color: #e6f0ff;
+}

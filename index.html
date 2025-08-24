@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registro de Ponto Facial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registro de Ponto</h1>
+      <p>Aproxime seu rosto da câmera para o reconhecimento.</p>
+      <div class="video-container">
+        <video id="video" width="640" height="480" autoplay muted></video>
+      </div>
+      <button id="baterPontoBtn">Bater Ponto</button>
+      <p id="status">Carregando modelos de reconhecimento...</p>
+      <a href="cadastro.html">Cadastrar novo funcionário</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="lib/face-api.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

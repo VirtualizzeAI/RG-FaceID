@@ -1,0 +1,71 @@
+body {
+  /* Fundo gradiente moderno */
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+#box-login {
+  /* Estilo da caixa de login */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(5px); /* Efeito de vidro fosco */
+}
+
+#box-login h2 {
+  margin-bottom: 25px;
+  color: #1e3c72;
+}
+
+#box-login form {
+  display: flex;
+  flex-direction: column;
+}
+
+#box-login input {
+  /* Estilo dos campos de entrada */
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+#box-login input:focus {
+  border-color: #2a5298;
+  box-shadow: 0 0 8px rgba(42, 82, 152, 0.4);
+  outline: none;
+}
+
+#box-login button {
+  /* Estilo do botão */
+  background-color: #2a5298;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#box-login button:hover {
+  background-color: #1e3c72;
+  transform: translateY(-2px);
+}
+
+#box-login button:active {
+  transform: translateY(0);
+}
